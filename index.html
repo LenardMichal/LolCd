@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LoLCD
+    </title>
+    <meta name="description" content="Make yourself better in League with skill timers.">
+    <meta name="keywords" content="League,Legends,CD,cooldowns,LoL, lolcd">
+    <meta name="author" content="Michał Lenard">
+    <meta name='viewport' content='width=device-width'>
+    <link rel='stylesheet' type="text/css" href='/css/style.css'>
+    <meta name="theme-color" content="#c8c8c8"/>
+    <link rel="manifest" href="/manifest.json">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126149371-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126149371-1');
+</script>
+ <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2115540335938571",
+    enable_page_level_ads: true
+  });
+</script>
+
+</head>
+
+<body>
+    <div id='App'>
+        <div id='logo'><img alt='logo' src='/assets/logo.svg'></div>
+        <div id='control'>
+
+        <select name='champions' id='select'>
+            <option selected disabled hidden value=9999>Champion</option>
+        </select>
+        <input type='text' id='search' placeholder='Search'>
+        
+        <button id='plusButton' disabled>+</button>
+        <button id='minusButton' disabled>-</button>
+        <button id='clearButton' disabled>--</button>
+        </div>
+        <form id='cd'>
+            <label>
+            <input type='radio' value='0' name='cd' class='radio'>0%
+            </label>
+            <label>
+            <input type='radio' value='5' name='cd' class='radio'>5%
+            </label>
+            <label>
+            <input type='radio' value='10' name='cd' class='radio '>10%</label>
+            <label><input type='radio' value='15' name='cd' class='radio'>15%</label>
+            <label><input type='radio' value='20' name='cd' class='radio'>20%</label>
+            <label><input type='radio' value='25' name='cd' class='radio'>25%</label>
+            <label><input type='radio' value='30' name='cd' class='radio'>30%</label>
+            <label><input type='radio' value='35' name='cd' class='radio'>35%</label>
+            <label class='checked'><input type='radio' value='40' name='cd' class='radio' checked>40%</label>
+            <label><input type='radio' value='45' name='cd' class='radio'>45%</label>
+            
+
+        </form>
+        <div id='wrappedCD'>
+        <div id='cooldowns'>
+            <div class='ability'>
+                <div id='QminCost' class='box'>Min Cost</div>
+                <div id='QmaxCost' class='box'>Max Cost</div>
+                <div id='QminCD' class='box'>Min CD</div>
+                <div id='QmaxCD' class='box'>Max CD</div>
+            </div>
+            <div class='ability'>
+                <div id='WminCost' class='box'>Min Cost</div>
+                <div id='WmaxCost' class='box'>Max Cost</div>
+                <div id='WminCD' class='box '>Min CD</div>
+                <div id='WmaxCD' class='box '>Max CD</div>
+            </div>
+            <div class='ability'>
+                <div id='EminCost' class='box'>Min Cost</div>
+                <div id='EmaxCost' class='box'>Max Cost</div>
+                <div id='EminCD' class='box'>Min CD</div>
+                <div id='EmaxCD' class='box'>Max CD</div>
+            </div>
+            <div class='ability'>
+                <div id='RminCost' class='box'>Min Cost</div>
+                <div id='RmaxCost' class='box'>Max Cost</div>
+                <div id='RminCD' class='box'>Min CD</div>
+                <div id='RmaxCD' class='box'>Max CD</div>
+            </div>
+         <div id='disc'>Hello this is LoLCD, ur personal cooldown
+             checker. Simple legend:
+              <span class='mana'>Mana</span>
+              <span class='energy'>Energy</span>
+              <span class='health'>Health</span>
+              <span class="noCost">No Cost</span>
+              <span class='otherRsc'>Stacks</span>
+              <span class='heat'>Heat</span>
+         </div>
+        </div>
+        
+        <div id='view'></div>
+
+        </div>
+        
+        
+       
+    <div id='ad'></div>
+    <footer>
+       <a href='#logo'><img alt='top' src='../assets/arrow-alt-circle-up.svg'></a>
+       
+        <div id='mail'><img alt='mail' src='../assets/envelope.svg'></div>
+        
+       
+       
+       <p id='legend'>Legend</p>
+    </footer>
+    </div>
+    
+     <script src='/javascript/newDB.js'></script>
+    <script src='/javascript/script.js'></script>
+     <!-- <script src='/serviceworker.js'></script> -->
+</body>
+
+</html>
